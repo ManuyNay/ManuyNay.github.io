@@ -181,8 +181,8 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
         }
 
         .instagram{
-            background-image: url('https://www.fixdate.io/modelo-invitacion/24/img/instagram.webp');
-            background-position: center center;
+            background-image: url('https://manuynay.github.io/img/04.webp');
+            background-position: center;
         }
         body{
             background-color: #FCF6F1;
@@ -2288,32 +2288,28 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
   
   
     <!-- Instagram parallax -->
-    <script>
-      // Si el ancho es de Telefono
-      if ($(window).width() < 768) {
-  
-        // Aceptar webp?
-        if (support_format_webp()) {
-          var imageInstagramParallax = 'img/instagram_mobile.webp';
-        } else {
-          var imageInstagramParallax = 'img/instagram_mobile.jpg';
-        }
-  
-      } else {
-  
-        // Aceptar webp?
-        if (support_format_webp()) {
-          var imageInstagramParallax = 'img/instagram.webp';
-        } else {
-          var imageInstagramParallax = 'img/instagram.jpg';
-        }
-  
-      }
-  
-      $('.instagram').parallax({
-        imageSrc: _pathProducto + imageInstagramParallax
-      });
-    </script>
+<script>
+  // Si el ancho es de Telefono
+  if ($(window).width() < 768) {
+    var imageInstagramParallax;
+    if (support_format_webp()) {
+      imageInstagramParallax = 'https://manuynay.github.io/img/04.webp';
+    } else {
+      imageInstagramParallax = 'https://manuynay.github.io/img/04.jpg';
+    }
+  } else {
+    if (support_format_webp()) {
+      imageInstagramParallax = 'https://manuynay.github.io/img/04.webp';
+    } else {
+      imageInstagramParallax = 'https://manuynay.github.io/img/04.jpg';
+    }
+  }
+
+  $('.instagram').parallax({
+    imageSrc: imageInstagramParallax
+  });
+</script>
+
   
   
     <!-- Api Maps-->
