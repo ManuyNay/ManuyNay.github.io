@@ -2662,30 +2662,17 @@
 
 <!-- Portada parallax -->
 <script>
-  if (device == 'mobile' || $(window).width() < 768) {
-
-    // Aceptar webp?
-    if (support_format_webp()) {
-      var imageParallax = 'fotos/01.webp';
+    if (device == 'mobile' || $(window).width() < 768) {
+      var imageParallax = 'https://manuynay.github.io/fotos/01.jpg';
     } else {
-      var imageParallax = 'fotos/01.jpg';
+      var imageParallax = 'https://manuynay.github.io/fotos/01.jpg';
     }
-
-  } else {
-
-    // Aceptar webp?
-    if (support_format_webp()) {
-      var imageParallax = 'fotos/01.webp';
-    } else {
-      var imageParallax = 'fotos/01.jpg';
-    }
-
-  }
-
-  $('.portada').parallax({
-    imageSrc: _pathProducto + imageParallax
-  });
-</script>
+  
+    $('.portada').parallax({
+      imageSrc: imageParallax
+    });
+  </script>
+  
 
 
 
