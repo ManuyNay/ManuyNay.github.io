@@ -181,8 +181,8 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
         }
 
         .instagram{
-            background-image: url('https://manuynay.github.io/img/04-01.webp');
-            background-position: center;
+            background-image: url('https://manuynay.github.io/img/04.webp');
+            background-position: center center;
         }
         body{
             background-color: #FCF6F1;
@@ -194,7 +194,7 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
         <img decoding="async" class="parallax-slider" src="https://manuynay.github.io/img/portada-3.webp" style="transform: translate3d(0px, -14px, 0px); position: absolute; height: 773px; width: 1179px; max-width: none;">
     </div>
     <div class="parallax-mirror" bis_skin_checked="1" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 896.539px; width: 1179px;">
-        <img decoding="async" class="parallax-slider" src="https://manuynay.github.io/img/04-01.webp" style="position: absolute; height: 773px; width: 1179px; max-width: none;">
+        <img decoding="async" class="parallax-slider" src="https://manuynay.github.io/img/04.webp" style="position: absolute; height: 773px; width: 1179px; max-width: none;">
     </div> -->
       
   
@@ -2288,24 +2288,19 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
   
   
     <!-- Instagram parallax -->
-<script>
-  // Si el ancho es de Telefono
-  if ($(window).width() < 768) {
+    <script>
+  if (device == 'mobile' || $(window).width() < 768) {
     var imageInstagramParallax;
     if (support_format_webp()) {
-      imageInstagramParallax = 'https://manuynay.github.io/img/04-01.webp';
+      imageInstagramParallax = 'https://ManuyNay.github.io/img/04.webp';
     } else {
-      imageInstagramParallax = 'https://manuynay.github.io/img/04.jpg';
+      imageInstagramParallax = 'https://ManuyNay.github.io/img/04.jpg';
     }
   } else {
-    if (support_format_webp()) {
-      imageInstagramParallax = 'https://manuynay.github.io/img/04-01.webp';
-    } else {
-      imageInstagramParallax = 'https://manuynay.github.io/img/04.jpg';
-    }
+    imageInstagramParallax = 'https://ManuyNay.github.io/img/04.jpg';
   }
 
-  $('.instagram').parallax({
+  $('.imageInstagramParallax).parallax({
     imageSrc: imageInstagramParallax
   });
 </script>
