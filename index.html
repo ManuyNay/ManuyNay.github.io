@@ -730,13 +730,17 @@ class="post-3916 page type-page status-publish ast-article-single" id="post-3916
               <!-- Contenido del SVG -->
             </svg>
           </div>
-          <a href="https://www.jw.org/es/biblioteca/musica-canciones/cantemos-con-gozo/132-ahora-ya-somos-uno/" style="text-decoration: none;">
-            <div>
-              <a href="https://www.jw.org/es/biblioteca/musica-canciones/cantemos-con-gozo/132-ahora-ya-somos-uno/" class="boton modal-regalos" style="text-decoration: none;">Ver más</a>
-            </div>
-          </a>
-          
-        </div>
+          <div>
+            <a id="enlaceBoton" href="https://www.jw.org/es/biblioteca/musica-canciones/cantemos-con-gozo/132-ahora-ya-somos-uno/" class="boton modal-regalos" style="text-decoration: none;">Ver más</a>
+          </div>
+        
+          <script>
+            // Función para redirigir al hacer clic en el botón
+            document.getElementById('enlaceBoton').addEventListener('click', function(event) {
+              event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+              window.location.href = this.getAttribute('href'); // Redirigir a la URL especificada en el atributo href
+            });
+          </script>
       </div>
     </div>
     
